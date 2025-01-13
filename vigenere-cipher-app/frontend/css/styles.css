@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/galaxy-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+p {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button {
+    background: #ffcc00;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e6b800;
+}

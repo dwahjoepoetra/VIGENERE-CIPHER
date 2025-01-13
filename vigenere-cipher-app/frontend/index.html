@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenère Cipher File Encryption/Decryption</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vigenère Cipher Wahyu Putra</h1>
+        <p>File Encryption/Decryption</p>
+        <form id="encryptForm" action="../backend/encrypt.php" method="post" enctype="multipart/form-data">
+            <h2>Encrypt File</h2>
+            <label for="encryptFile">Choose file to encrypt:</label>
+            <input type="file" name="file" id="encryptFile" title="Choose file to encrypt" required>
+            <input type="text" name="key" placeholder="Enter encryption key" required>
+            <label for="format">Select format:</label>
+            <select name="format" id="format" title="Select file format" required>
+                <option value="">Select format</option>
+                <option value="docx">DOCX</option>
+                <option value="doc">DOC</option>
+                <option value="pptx">PPTX</option>
+                <option value="ppt">PPT</option>
+                <option value="pdf">PDF</option>
+                <option value="xls">XLS</option>
+                <option value="xlsx">XLSX</option>
+            </select>
+            <button type="submit">Encrypt</button>
+        </form>
+        <form id="decryptForm" action="../backend/decrypt.php" method="post" enctype="multipart/form-data">
+            <h2>Decrypt File</h2>
+            
+            <label for="file">Choose file to decrypt:</label>
+            <input type="file" name="file" id="file" title="Choose file to decrypt" required>
+            
+            <label for="key">Decryption key:</label>
+            <input type="text" name="key" id="key" placeholder="Enter decryption key" title="Enter decryption key" required>
+            
+            <label for="format">Select format:</label>
+            <select name="format" id="format" title="Select file format" required>
+                <option value="">Select format</option>
+                <option value="docx">DOCX</option>
+                <option value="doc">DOC</option>
+                <option value="pptx">PPTX</option>
+                <option value="ppt">PPT</option>
+                <option value="pdf">PDF</option>
+                <option value="xls">XLS</option>
+                <option value="xlsx">XLSX</option>
+            </select>
+            
+            <button type="submit">Decrypt</button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
